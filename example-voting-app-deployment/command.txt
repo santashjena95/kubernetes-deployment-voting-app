@@ -1,3 +1,4 @@
 kubectl create -f .
 kubectl get all
 gcloud container clusters resize standard-cluster-1 --num-nodes 3 --zone us-central1-a
+kubectl scale deploy worker-app-deployment --replicas 2
